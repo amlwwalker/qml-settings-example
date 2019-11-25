@@ -24,7 +24,7 @@ type SystemSettings struct {
 }
 type Controller struct {
 	core.QObject
-	UserSettings *SystemSettings
+	UserSettings *SystemSettings `property:"systemSettings"`
 }
 
 func ControllerInstance() *Controller {
